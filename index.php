@@ -4,7 +4,7 @@
 
 $conn_str = getenv("MYSQLCONNSTR_DefaultConnection");
 
-$database = "addressbook";
+$database = "agenda";
 $host = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $conn_str);
 $username = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $conn_str);
 $password = preg_replace("/^.*Password=(.+?)$/", "\\1", $conn_str);
