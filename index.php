@@ -19,7 +19,7 @@ $password = preg_replace("/^.*Password=(.+?)$/", "\\1", $conn_str);
   // Connect to the database
   mysql_connect($host, $username, $password) or die(mysql_error()); 
   mysql_select_db($database) or die(mysql_error()); 
-  mysql_query ("CREATE TABLE IF NOT EXISTS addressbook.address (id INT(4) NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(30), phone VARCHAR(30), email VARCHAR(30))") or die(mysql_error());
+  mysql_query ("CREATE TABLE IF NOT EXISTS agenda.address (id INT(4) NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(30), phone VARCHAR(30), email VARCHAR(30))") or die(mysql_error());
 
 if ( $mode=="add") 
  {
